@@ -62,3 +62,6 @@ All charts are connected by slicer to allow the user to select from among the co
 - In the process of assembling this dashboard, I learned more about **how slicers perform** — and (through trial and error) how they will only connect to PivotTables that share the same pivot cache.
 - I also gained additional insight into the pros and cons of **basing charts on PivotTables, versus regular Excel tables**. This led to further research into methods by which the respective functionalities of both options can be combined.
 - (It’s a bit frivolous, but I also learned the downside of using a **dark dashboard background**—and how, as a result, charts with no fills can be even more temperamental about being selected and moved than regular charts are.)
+
+
+![dashboard screenshot](images/mmc_screenshot.png)
