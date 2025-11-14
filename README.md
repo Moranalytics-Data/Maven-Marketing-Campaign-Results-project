@@ -36,10 +36,10 @@ Based on an assumption that the report was intended for presentation in the U.S.
 ### 🔍 **Analysis Process**
 -	The dashboard’s **customer profile** charts were based on traditional PivotTables.
 -	Because the dataset’s orientation of **product purchase information** did not lend itself to easy conversion into a bar chart, various methods were applied. Initially, PowerQuery was used to unpivot the columns in question in order to generate the necessary totals in a desired orientation, but the results could not then be connected to the country-based slicer already established for the customer-demographic tables.
-Ultimately, a **helper table** was built with a series of GETPIVOTDATA formulas in order to create a reoriented table better suited to adapt into the necessary bar chart — but that would still remain responsive to the country slicer.
+    - Ultimately, a **helper table** was built with a series of GETPIVOTDATA formulas in order to create a reoriented table better suited to adapt into the necessary bar chart — but that would still remain responsive to the country slicer.
 -	A similar approach would be applied to the columns that tracked customers’ acceptance of **Maven Marketing’s various campaigns**, such that the required calculations could be oriented for adaptation into a bar chart.**
 
-&nbsp;&nbsp;&nbsp;&nbsp;(Subsequent research would reveal other, more simple approaches to creating such a helper table, including the use of basic INDEX formulas, as well as dynamic array formulas employing dot notation.)
+    - (Subsequent research would reveal other, more simple approaches to creating such a helper table, including the use of basic INDEX formulas, as well as dynamic array formulas employing dot notation.)
 -	Regarding **web purchases**, initial investigations — using Excel’s “Correlation” Data Analysis tool — suggested possible connections with wine purchases in particular (which would seem to make some intuitive sense). However, an Excel “Regression” analysis found a heteroskedastic relationship between those variables that would seem to indicate that there was not, in fact, a significant relationship between web purchases and wine purchases.
 -	More convincing, however, was — somewhat surprisingly — a statistical **relationship between web purchases and in-store purchases**, indicating that the former did not preclude the latter, as might be speculated.
 
@@ -56,8 +56,7 @@ All charts are connected by slicer to allow the user to select from among the co
 -	Overall, and in every individual country, wine is the **top seller**, followed by meat and then gold.•	In-store purchases are by far the most successful sales channel; catalog purchases and purchases made through promotions are roughly comparable as the least successful.
 -	After decent response to **Maven Marketing’s first campaign**, customer interest dropped off sharply. It bounced back to consistent levels thereafter, but has seen a particularly sharp uptick with Maven’s most recent campaign, which was by far its most successful.
 -	Surprisingly, it does not appear that customers who make purchases online are doing so exclusively: There appears to be a correlation between **online and in-store purchases**. If increased online engagement is a desired outcome, more in-store marketing for the website should be considered, perhaps touting online-exclusive offers that could supplement the in-store experience.
-
-&nbsp;&nbsp;&nbsp;&nbsp;Data also suggests that customers in relationships, both married and otherwise, are a significantly larger portion of the base than those not in relationships. Perhaps outreach more specifically targeted to the single/divorced/widowed demographic(s) could be considered.
+- Data also suggests that **customers in relationships**, both married and otherwise, are a significantly larger portion of the base than those not in relationships. Perhaps outreach more specifically targeted to the single/divorced/widowed demographic(s) could be considered.
 ### 💡 **Reflection/Learning Outcomes**
 - This project offered further proof of **PowerQuery’s abilities** to simply perform certain actions that would be far more complex (and far less elegant) when done in Excel, itself.
 - In the process of assembling this dashboard, I learned more about **how slicers perform** — and (through trial and error) how they will only connect to PivotTables that share the same pivot cache.
